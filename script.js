@@ -63,7 +63,7 @@ puzzleItemsDesktop.forEach(function (element) {
         if (document.querySelectorAll('.dropped').length == 9) {
           document.querySelector('#puz').classList.add('allDone');
           document.querySelector('#puz').style.border = 'none';
-          document.querySelector('#puz').style.animation = 'allDone 20s linear forwards';
+          document.querySelector('#puz').style.animation = 'allDone 33s linear forwards';
           let mySound = new Audio('audio/song.mp3');
           mySound.play();
 
@@ -97,7 +97,7 @@ function drop(ev) {
     if (document.querySelectorAll('.dropped').length == 9) {
       document.querySelector('#puz').classList.add('allDone');
       document.querySelector('#puz').style.border = 'none';
-      document.querySelector('#puz').style.animation = 'allDone 20s linear forwards';
+      document.querySelector('#puz').style.animation = 'allDone 33s linear forwards';
       let mySound = new Audio('audio/song.mp3');
         mySound.play();
 
