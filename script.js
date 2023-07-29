@@ -1,4 +1,4 @@
-var images = ['https://images.srkh.in/wp-content/uploads/2023/02/Happy-Propose-Day-Images-333-I-LOVE-YOU.jpg'];
+var images = ['images/img1.jpg'];
 
 var currentIndex = 0;
 var totalClicks = 0;
@@ -63,12 +63,14 @@ puzzleItemsDesktop.forEach(function (element) {
         if (document.querySelectorAll('.dropped').length == 9) {
           document.querySelector('#puz').classList.add('allDone');
           document.querySelector('#puz').style.border = 'none';
-          document.querySelector('#puz').style.animation = 'allDone 1s linear forwards';
+          document.querySelector('#puz').style.animation = 'allDone 4s linear forwards';
+          let mySound = new Audio('audio/song.mp3');
+          mySound.play();
 
           setTimeout(function () {
             reloadPuzzle();
             randomizeImage();
-          }, 3000);
+          }, 33000);
         }
       }
     }
@@ -95,12 +97,16 @@ function drop(ev) {
     if (document.querySelectorAll('.dropped').length == 9) {
       document.querySelector('#puz').classList.add('allDone');
       document.querySelector('#puz').style.border = 'none';
-      document.querySelector('#puz').style.animation = 'allDone 1s linear forwards';
+      document.querySelector('#puz').style.animation = 'allDone 4s linear forwards';
+      let mySound = new Audio('audio/song.mp3');
+        mySound.play();
 
       setTimeout(function () {
         reloadPuzzle();
         randomizeImage();
-      }, 3000);
+      }, 33000);
     }
   }
 }
+
+
