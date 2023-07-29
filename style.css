@@ -1,15 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Lumanosimo&family=Shadows+Into+Light&family=Slackside+One&family=Ubuntu:ital@1&family=Zeyada&display=swap');
+
 :root {
     --color:lightgray;
     --border-radius:10px;
   }
   
   body {
-    background:#efefef;
+    background: url('images/bg1.jpg') no-repeat center center fixed;
+    background-size: cover;
     padding:0;
     margin:0;
     box-sizing:border-box;
   }
   
+  .header{
+    display: flex;
+    justify-content: center;
+  }
+  .header p{
+    font-size: 40px;
+    color: #00ffc7;
+    font-weight: bold;
+    font-family: 'Slackside One', cursive;
+  }
   #puz, #puzz {
     position:absolute;
     border-radius:var(--border-radius) 0 var(--border-radius) 0;    
@@ -22,7 +35,7 @@
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    border:3px dashed lightgray;
+    border:6px dashed rgb(255, 251, 0);
     overflow:hidden;
   }
   #puzz {
@@ -35,7 +48,7 @@
     float:left;
     width:100px;
     height:100px;
-    outline:1px dashed lightgray;
+    outline:2px dashed rgb(29, 201, 186);
   }
   
   #puzz i {
